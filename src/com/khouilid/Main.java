@@ -3,7 +3,9 @@ package com.khouilid;
 
 import Héritage.*;
 import Polymorphism.Bibliotheque;
+import Polymorphism.Livre;
 import Polymorphism.Society;
+import Polymorphism.Video;
 
 import java.util.Date;
 import java.util.Scanner;
@@ -52,10 +54,12 @@ public class Main {
 
         } else if (exe_number == 5) {
             var bibliotic = new Bibliotheque();
-            bibliotic.setabonme("ABDO", "2222");
-            bibliotic.getabonme("ABDO");
-            bibliotic.set("A", "122", "Non", "ak", "1.1", "2", "1");
-            bibliotic.set("A", "122", "Non", "ak", "1.1", "2", "1");
+//            Livre livre = new Livre();
+            Video video = new Video();
+//            bibliotic.setabonme("ABDO", "2222");
+//            bibliotic.getabonme("ABDO");
+            bibliotic.set(video, "A", "122", "Non", "ak", "1.1", "2", "1");
+            bibliotic.set(video,"A", "122", "Non", "ak", "1.1", "2", "1");
 
 //
 

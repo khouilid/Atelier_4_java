@@ -8,22 +8,20 @@ public class Bibliotheque {
 
     public Bibliotheque() {
         abonms = new Abonne();
-//        Ouvrage allOvrage = new Ouvrage();
-
     }
 
     //vidios
-    public void set(String title, String date, String existe, String editeur, String reel, String id, String abonmid) {
-        Video video = new Video();
+    public void set(Video video, String title, String date, String existe, String editeur, String reel, String id, String abonmid) {
+
         video.setOuvrage(title, date, existe, editeur, reel, id, abonmid);
-        video.afficher(title);
+        System.out.println(video.afficher(title));
 
     }
 
-    public void set(String title, String date, String existe, String auteur, String id, String abonmid) {
-        Livre livre = new Livre();
+    public void set(Livre livre, String title, String date, String existe, String auteur, String id, String abonmid) {
+
         livre.setOuvrage(title, date, existe, auteur, id, abonmid);
-        livre.afficher(title);
+        System.out.println(livre.afficher(title));
 
     }
 
