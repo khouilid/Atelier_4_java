@@ -14,15 +14,16 @@ public class Bibliotheque {
     public void set(Video video, String title, String date, String existe, String editeur, String reel, String id, String abonmid) {
 
         video.setOuvrage(title, date, existe, editeur, reel, id, abonmid);
-        System.out.println(video.afficher(title));
 
+
+    }
+    public void getOuvre(Ouvrage ouvrage, String title){
+        System.out.println(ouvrage.afficher(title));
     }
 
     public void set(Livre livre, String title, String date, String existe, String auteur, String id, String abonmid) {
 
         livre.setOuvrage(title, date, existe, auteur, id, abonmid);
-        System.out.println(livre.afficher(title));
-
     }
 
     //Abonms

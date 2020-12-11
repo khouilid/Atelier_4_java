@@ -18,8 +18,6 @@ public class Abonne {
 
 
     }
-
-
     public HashMap<String, Object> getAbmon(String name) {
         for (var abonm : abonms) {
             if (abonm.get("Nom") == name) {
@@ -29,6 +27,4 @@ public class Abonne {
         }
         return null;
     }
-
-
 }

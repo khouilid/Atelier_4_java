@@ -9,7 +9,7 @@ public class Livre extends Ouvrage {
     public void setOuvrage(String title, String date, String existe, String auteur, String id, String abonmid) {
         HashMap<String, String> user = new HashMap<>();
 
-        if (!isExest(abonmid)) {
+        if (!isExest(title)) {
             user.put("ID", id);
             user.put("Title", title);
             user.put("Auteur", auteur);
@@ -17,20 +17,19 @@ public class Livre extends Ouvrage {
             user.put("Desponible", existe);
             user.put("user_id", abonmid);
             this.ouvrages.add(user);
+            System.out.println("Done!");
+
         } else System.out.println("Délolé, cette abonne déja prenge une ouvrage.");
-
-
-//        afficher(title);
-
-
     }
 
 
-    private boolean isExest(String abonmid) {
+    private boolean isExest(String title) {
         for (var ouvarge : this.ouvrages) {
 
-            return !ouvarge.get("user_id").equals(abonmid);
+            return ouvarge.get("Title").equals(title);
+
         }
+
         return false;
     }
 
@@ -38,7 +37,7 @@ public class Livre extends Ouvrage {
         for (var ouvarge : this.ouvrages) {
 
             if (ouvarge.get("Title").equals(tittle)) {
-                return ouvarge.get("Title");
+                return ouvarge.get("Auteur");
             }
         }
         return null;

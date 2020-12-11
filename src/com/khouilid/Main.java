@@ -54,12 +54,15 @@ public class Main {
 
         } else if (exe_number == 5) {
             var bibliotic = new Bibliotheque();
-//            Livre livre = new Livre();
-            Video video = new Video();
-//            bibliotic.setabonme("ABDO", "2222");
-//            bibliotic.getabonme("ABDO");
-            bibliotic.set(video, "A", "122", "Non", "ak", "1.1", "2", "1");
-            bibliotic.set(video,"A", "122", "Non", "ak", "1.1", "2", "1");
+            Livre livre = new Livre();
+            bibliotic.set(livre, "death", "21/12/2020", "Non", "roy", "12", "21");
+            bibliotic.set(livre, "death", "21/12/2020", "Non", "roy", "12", "21");
+            bibliotic.getOuvre(livre, "death");
+//            Video video = new Video();
+////            bibliotic.setabonme("ABDO", "2222");
+////            bibliotic.getabonme("ABDO");
+//            bibliotic.set(video, "A", "122", "Non", "ak", "1.1", "2", "1");
+//            bibliotic.set(video,"A", "122", "Non", "ak", "1.1", "2", "1");
 
 //
 

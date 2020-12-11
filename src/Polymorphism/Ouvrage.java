@@ -17,26 +17,14 @@ public class Ouvrage {
         this.ouvrages.add(user);
     }
 
-//
-//    public String affich(String title) {
-//        for (var ouvarge : ouvrages) {
-//            var titl =  ouvarge.get("Title");
-//            if (titl.equals(title)) {
-//                return  "Title: " + ouvarge.get("Desponible") + "la date de création :" + ouvarge.get("Date") + "Desponible : Oui";
-//            } else return
-//
-//        }
-//        return null;
-//    }
-
     public String afficher(String title) {
         for (var ouvarge : ouvrages) {
-            var titl =  ouvarge.get("Title");
+            var titl = ouvarge.get("Title");
             if (titl.equals(title)) {
-                return "Title: " + ouvarge.get("Title")  + " la date de création : " + ouvarge.get("Date") + " Desponible : " + ouvarge.get("Desponible");
+                return "Title: " + ouvarge.get("Title") + " la date de création : " + ouvarge.get("Date") + " Desponible : " + ouvarge.get("Desponible");
             } else return null;
 
         }
-        return  null;
+        return null;
     }
 }
